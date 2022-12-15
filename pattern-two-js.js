@@ -1,5 +1,5 @@
 
-//C String Notes: Finger Pattern 3
+//C String Notes: Finger Pattern 2
 document.getElementById("first-finger-c-two-submit").addEventListener("click", function(){
    let pitch = document.getElementById("first-finger-c-two").value
 
@@ -20,7 +20,7 @@ document.getElementById("second-finger-c-two-submit").addEventListener("click", 
 document.getElementById("third-finger-c-two-submit").addEventListener("click", function(){
    let pitch = document.getElementById("third-finger-c-two").value
    
-   if (pitch === "F#" || pitch === "f#" || pitch === "F #" || pitch === "f #"){
+   if (pitch === "F" || pitch === "f"){
    document.getElementById("third-fingercg-two").style.backgroundColor="#00FF00"}
   else{document.getElementById("third-finger-c-two").style.backgroundColor="#FF0000"}
    })
@@ -33,7 +33,7 @@ document.getElementById("fourth-finger-c-two-submit").addEventListener("click", 
    else{document.getElementById("fourth-finger-c-two").style.backgroundColor="#FF0000"}
    })           
 
-//G String Notes Finger Pattern 3
+//G String Notes Finger Pattern 2
 
 document.getElementById("first-finger-g-two-submit").addEventListener("click", function(){
    let pitch = document.getElementById("first-finger-g-two").value
@@ -55,7 +55,7 @@ document.getElementById("second-finger-g-two-submit").addEventListener("click", 
 document.getElementById("third-finger-g-two-submit").addEventListener("click", function(){
    let pitch = document.getElementById("third-finger-g-two").value
    
-   if (pitch === "C#" || pitch === "c#" || pitch === "C #" || pitch === "c #"){
+   if (pitch === "C" || pitch === "c"){
    document.getElementById("third-finger-g-two").style.backgroundColor="#00FF00"}
   else{document.getElementById("third-finger-g-two").style.backgroundColor="#FF0000"}
    })
@@ -68,7 +68,7 @@ document.getElementById("fourth-finger-g-two-submit").addEventListener("click", 
    else{document.getElementById("fourth-finger-g-two").style.backgroundColor="#FF0000"}
    })           
 
-//D String Notes Finger Pattern 3
+//D String Notes Finger Pattern 2
 
 document.getElementById("first-finger-d-two-submit").addEventListener("click", function(){
    let pitch = document.getElementById("first-finger-d-two").value
@@ -90,7 +90,7 @@ document.getElementById("second-finger-d-two-submit").addEventListener("click", 
 document.getElementById("third-finger-d-two-submit").addEventListener("click", function(){
    let pitch = document.getElementById("third-finger-d-two").value
    
-   if (pitch === "G#" || pitch === "g#" || pitch === "G #" || pitch === "g #"){
+   if (pitch === "G" || pitch === "g"){
    document.getElementById("third-finger-d-two").style.backgroundColor="#00FF00"}
   else{document.getElementById("third-finger-d-two").style.backgroundColor="#FF0000"}
    })
@@ -103,7 +103,7 @@ document.getElementById("fourth-finger-d-two-submit").addEventListener("click", 
    else{document.getElementById("fourth-finger-d-two").style.backgroundColor="#FF0000"}
    }) 
 
-//A String Notes Finger Pattern 3
+//A String Notes Finger Pattern 4
 
 document.getElementById("first-finger-a-two-submit").addEventListener("click", function(){
    let pitch = document.getElementById("first-finger-a-two").value
@@ -125,7 +125,7 @@ document.getElementById("second-finger-a-two-submit").addEventListener("click", 
 document.getElementById("third-finger-a-two-submit").addEventListener("click", function(){
    let pitch = document.getElementById("third-finger-a-two").value
    
-   if (pitch === "D#" || pitch === "d#" || pitch === "D #" || pitch === "d #"){
+   if (pitch === "D" || pitch === "d"){
    document.getElementById("third-finger-a-two").style.backgroundColor="#00FF00"}
   else{document.getElementById("third-finger-a-two").style.backgroundColor="#FF0000"}
    })
@@ -138,7 +138,7 @@ document.getElementById("fourth-finger-a-two-submit").addEventListener("click", 
    else{document.getElementById("fourth-finger-a-two").style.backgroundColor="#FF0000"}
    })
 
-   //E String Notes Finger Pattern 3
+   //E String Notes Finger Pattern 2
 
 document.getElementById("first-finger-e-two-submit").addEventListener("click", function(){
    let pitch = document.getElementById("first-finger-e-two").value
