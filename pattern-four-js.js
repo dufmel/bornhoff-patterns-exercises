@@ -21,7 +21,7 @@ document.getElementById("third-finger-c-four-submit").addEventListener("click", 
    let pitch = document.getElementById("third-finger-c-four").value
    
    if (pitch === "F" || pitch === "f"){
-   document.getElementById("third-finger-g-four").style.backgroundColor="#00FF00"}
+   document.getElementById("third-finger-c-four").style.backgroundColor="#00FF00"}
   else{document.getElementById("third-finger-c-four").style.backgroundColor="#FF0000"}
    })
    
