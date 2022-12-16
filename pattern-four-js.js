@@ -175,11 +175,12 @@ document.getElementById("third-finger-e-four-submit").addEventListener("click", 
    
 //Reset Button
 
-let resetBtn=document.getElementById("reset-btn")
-
-resetBtn.addEventListener("click", function(){
-   let inputs = document.querySelectorAll("input")
-   for (let i = 0; i < inputs.length; i++)
-   inputs[i].value=""
-   if(inputs[i].type == "text" && inputs[i].value == ""){}
-   inputs[i].style.backgroundColor="transparent"})
+document.getElementById("reset-btn").addEventListener("click", function() {
+   const inputs = document.querySelectorAll("input")
+   for(let i=0; i < inputs.length; i++){
+   if (inputs[i].type == "text"){
+      inputs[i].value = ""
+      inputs[i].style.removeProperty('background-color')
+   }
+   }
+})

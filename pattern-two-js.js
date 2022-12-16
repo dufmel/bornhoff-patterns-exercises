@@ -21,7 +21,7 @@ document.getElementById("third-finger-c-two-submit").addEventListener("click", f
    let pitch = document.getElementById("third-finger-c-two").value
    
    if (pitch === "F" || pitch === "f"){
-   document.getElementById("third-fingercg-two").style.backgroundColor="#00FF00"}
+   document.getElementById("third-finger-c-two").style.backgroundColor="#00FF00"}
   else{document.getElementById("third-finger-c-two").style.backgroundColor="#FF0000"}
    })
    
@@ -103,7 +103,7 @@ document.getElementById("fourth-finger-d-two-submit").addEventListener("click", 
    else{document.getElementById("fourth-finger-d-two").style.backgroundColor="#FF0000"}
    }) 
 
-//A String Notes Finger Pattern 4
+//A String Notes Finger Pattern 2
 
 document.getElementById("first-finger-a-two-submit").addEventListener("click", function(){
    let pitch = document.getElementById("first-finger-a-two").value
@@ -160,7 +160,7 @@ document.getElementById("second-finger-e-two-submit").addEventListener("click", 
 document.getElementById("third-finger-e-two-submit").addEventListener("click", function(){
    let pitch = document.getElementById("third-finger-e-two").value
    
-   if (pitch === "A#" || pitch === "a#" || pitch === "A #" || pitch === "a #"){
+   if (pitch === "A" || pitch === "a"){
    document.getElementById("third-finger-e-two").style.backgroundColor="#00FF00"}
   else{document.getElementById("third-finger-e-two").style.backgroundColor="#FF0000"}
    })
@@ -175,12 +175,12 @@ document.getElementById("third-finger-e-two-submit").addEventListener("click", f
    
 //Reset Button
 
-let resetBtn=document.getElementById("reset-btn")
-
-resetBtn.addEventListener("click", function(){
-   let inputs = document.querySelectorAll("input")
-   for (let i = 0; i < inputs.length; i++)
-   inputs[i].value=""
-   if(inputs[i].type == "text" && inputs[i].value == ""){
-   inputs[i].style.backgroundColor="transparent"}
+document.getElementById("reset-btn").addEventListener("click", function() {
+   const inputs = document.querySelectorAll("input")
+   for(let i=0; i < inputs.length; i++){
+   if (inputs[i].type == "text"){
+      inputs[i].value = ""
+      inputs[i].style.removeProperty('background-color')
+   }
+   }
 })

@@ -197,8 +197,12 @@ document.getElementById("fourth-finger-e-one-submit").addEventListener("click", 
    
 //Reset Button
 
-document.getElementById("reset-btn").addEventListener("click", function(){
-   let inputs = document.getElementsByTagName("input")
-   for(let i=0; i < inputs.length; i++)
-   inputs[i].value=""
+document.getElementById("reset-btn").addEventListener("click", function() {
+   const inputs = document.querySelectorAll("input")
+   for(let i=0; i < inputs.length; i++){
+   if (inputs[i].type == "text"){
+      inputs[i].value = ""
+      inputs[i].style.removeProperty('background-color')
+   }
+   }
 })
